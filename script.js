@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (hamburgerBtn && navMenu) {
         hamburgerBtn.addEventListener("click", function() {
-            // Vaihtaa active-luokan päälle ja pois klikatessa
+            
             hamburgerBtn.classList.toggle("active");
             navMenu.classList.toggle("active");
         });
