@@ -382,13 +382,13 @@ body {
 
 @media (max-width: 950px) {
     .top_bar {
-        flex-direction: row; /* Pidetään logo ja burgeri samalla rivillä */
+        flex-direction: row; 
         justify-content: space-between;
         height: 90px;
         padding: 10px 30px;
     }
 
-    /* Hampurilaispainikkeen tyylit (kolme viivaa) */
+    
     .hamburger-btn {
         display: flex;
         flex-direction: column;
@@ -405,31 +405,31 @@ body {
     .hamburger-btn span {
         width: 30px;
         height: 3px;
-        background-color: #0f4d2a; /* Logon vihreä */
+        background-color: #0f4d2a
         border-radius: 10px;
         transition: all 0.3s ease;
     }
 
-    /* Muutetaan navigaatio mobiililaatikoksi, joka liukuu esiin */
+    
     .navigation {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 90px; /* Alkaa heti top_barin alapuolelta */
+        top: 90px; 
         left: 0;
         width: 100%;
         background-color: #ffffff;
         box-shadow: 0 4px 5px rgba(0,0,0,0.1);
         gap: 0;
         padding: 0;
-        max-height: 0; /* Piilotettu oletuksena */
+        max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease-in-out;
     }
 
-    /* Kun valikko on auki (.active), näytetään linkit */
+    
     .navigation.active {
-        max-height: 300px; /* Riittävästi tilaa kolmelle linkille */
+        max-height: 300px; 
     }
 
     .navigation a {
@@ -440,7 +440,7 @@ body {
         box-sizing: border-box;
     }
 
-    /* Animoidaan hampurilaisviivat ruksiksi (X), kun valikko on auki */
+    
     .hamburger-btn.active span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
